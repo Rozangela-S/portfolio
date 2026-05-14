@@ -11,7 +11,7 @@ export function Header() {
 
     const sections = sectionIds
       .map((id) => document.querySelector(id))
-      .filter(Boolean);
+      .filter((section): section is Element => section !== null);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,7 +27,7 @@ export function Header() {
       }
     );
 
-    sections.forEach((section) => observer.observe(section));
+    sections.forEach((section: any) => observer.observe(section));
 
     return () => observer.disconnect();
   }, []);

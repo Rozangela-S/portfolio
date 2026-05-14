@@ -4,7 +4,6 @@ import { ExperienceSection } from "./components/experienceSection";
 import { Header } from "./components/herader";
 import { HeroSection } from "./components/heroSection";
 import { InternalCasesSection } from "./components/internalCasesSection";
-import { ProjectsSection } from "./components/projectsSection";
 import { SkillsSection } from "./components/skillsSection";
 
 
