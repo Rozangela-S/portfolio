@@ -32,6 +32,13 @@ export function Header() {
     return () => observer.disconnect();
   }, []);
 
+  const whatsappMessage =
+    "Olá, Rozângela! Vi seu portfólio e gostaria de conversar sobre um projeto.";
+
+  const whatsappUrl = `https://wa.me/${
+    personalInfo.whatsapp
+  }?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -75,10 +82,13 @@ export function Header() {
         </div>
 
         <a
-          href={personalInfo.resume}
-          className="hidden rounded-full border border-cyan-400/40 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-zinc-950 md:inline-flex"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full bg-green-400 px-6 py-3 text-sm font-bold text-zinc-950 transition hover:bg-green-300"
         >
-          Currículo
+          Falar no WhatsApp
+
         </a>
       </nav>
     </header>

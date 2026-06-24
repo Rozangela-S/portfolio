@@ -2,6 +2,13 @@ import { personalInfo } from "../mock/portfolio";
 
 
 export function ContactSection() {
+  const whatsappMessage =
+    "Olá, Rozângela! Vi seu portfólio e gostaria de conversar sobre um projeto.";
+
+  const whatsappUrl = `https://wa.me/${
+    personalInfo.whatsapp
+  }?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <section
       id="contato"
@@ -23,6 +30,15 @@ export function ContactSection() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-green-400 px-6 py-3 text-sm font-bold text-zinc-950 transition hover:bg-green-300"
+          >
+            Falar no WhatsApp
+          </a>
+
+          <a
             href={`mailto:${personalInfo.email}`}
             className="rounded-full bg-cyan-400 px-6 py-3 text-sm font-bold text-zinc-950 transition hover:bg-cyan-300"
           >
@@ -37,12 +53,12 @@ export function ContactSection() {
             LinkedIn
           </a>
 
-          <a
+          {/* <a
             href={personalInfo.resume}
             className="rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition hover:border-cyan-300 hover:text-cyan-300"
           >
             Currículo
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

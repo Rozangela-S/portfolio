@@ -4,6 +4,7 @@ import { ExperienceSection } from "./components/experienceSection";
 import { Header } from "./components/herader";
 import { HeroSection } from "./components/heroSection";
 import { InternalCasesSection } from "./components/internalCasesSection";
+import { PersonalProjects } from "./components/personalProjects";
 import { SkillsSection } from "./components/skillsSection";
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutSection />
       <ExperienceSection />
       <InternalCasesSection/>
+      <PersonalProjects />
       <SkillsSection />
       <ContactSection />
     </main>

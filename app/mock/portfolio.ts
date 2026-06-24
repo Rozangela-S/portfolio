@@ -4,8 +4,10 @@ export const personalInfo = {
   email: "rozangelasilva55@icloud.com",
   github: "https://github.com/Rozangela-S",
   linkedin: "https://www.linkedin.com/in/roz%C3%A2ngela-silva-4343a3271/",
-  resume: "/curriculo.pdf",
+  // resume: "/curriculo.pdf",
   location: "Brasil",
+  whatsapp: "5583988351599",
+
 };
 
 export const navLinks = [
@@ -20,6 +22,10 @@ export const navLinks = [
   {
     label: "Entregas",
     href: "#entregas",
+  },
+  {
+    label: "Projetos",
+    href: "#projetos",
   },
   {
     label: "Skills",
@@ -68,7 +74,7 @@ export const internalCases = [
   },
   {
     title: "Confraonline",
-    category: "Sistema corporativo",
+    category: "Meios de pagamento",
     description:
       "Atuação em sistema com demandas de interface, sustentação, melhorias visuais e implementação de funcionalidades alinhadas às necessidades do negócio.",
     responsibilities: [
@@ -88,6 +94,41 @@ export const internalCases = [
       "Apoio em demandas operacionais",
       "Consumo de endpoints",
       "Ajustes de experiência do usuário",
+    ],
+  },
+];
+
+export const personalProjects = [
+  {
+    title: "AutoShine Agenda",
+    category: "Sistema de Agendamento",
+    description:
+      "Sistema de agendamento para estética automotiva, com visão do cliente e painel administrativo. O cliente consegue solicitar serviços como lavagem detalhada, higienização, polimento e vitrificação, enquanto o administrador gerencia os atendimentos e altera o status do serviço.",
+    demoUrl: "https://autoshine-agenda.vercel.app/",
+    githubUrl: "https://github.com/Rozangela-S/autoshine-agenda",
+    // tags: ["Next.js", "TypeScript", "Tailwind CSS", "LocalStorage"],
+    responsibilities: [
+      "Criação da interface responsiva",
+      "Fluxo de agendamento para cliente",
+      "Painel administrativo para gerenciamento",
+      "Controle de status dos atendimentos",
+      "Persistência de dados com localStorage",
+    ],
+  },
+  {
+    title: "StockPro Sistemas",
+    category: "Controle de Estoque",
+    description:
+      "Sistema de controle de estoque multi-nicho, desenvolvido para mercadinho, loja de peças automotivas e loja de roupas. A aplicação permite cadastrar produtos, controlar entrada e saída de estoque, visualizar estoque baixo, filtrar por categoria e acompanhar métricas financeiras.",
+    demoUrl: "https://stockpro-sistemas.vercel.app/",
+    githubUrl: "https://github.com/Rozangela-S/stockpro-sistemas",
+    // tags: ["Next.js", "TypeScript", "Tailwind CSS", "Dashboard"],
+    responsibilities: [
+      "Dashboard com métricas de estoque",
+      "Cadastro de produtos por nicho",
+      "Controle de entrada e saída",
+      "Filtro e busca por produtos",
+      "Alerta de estoque baixo",
     ],
   },
 ];
